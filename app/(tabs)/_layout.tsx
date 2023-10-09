@@ -17,6 +17,8 @@ function TabBarIcon(props: {
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
+  // rediect to login
+
   return (
     <Tabs
       screenOptions={{

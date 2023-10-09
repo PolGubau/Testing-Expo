@@ -1,13 +1,20 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 
- import { Text, View } from '../../components/Themed';
+import { Text, View } from '../../components/Themed';
+import { router, useNavigation } from 'expo-router';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Create</Text>
-      <View style={styles.separator}  />
-      </View>
+      <TouchableOpacity
+        onPress={() => {
+          router.replace('/login');
+        }}>
+        <Text>Press Me</Text>
+      </TouchableOpacity>
+      <View style={styles.separator} />
+    </View>
   );
 }
 
