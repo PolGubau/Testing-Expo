@@ -39,3 +39,9 @@ yarn-error.*
 
 expo-env.d.ts
 # @end expo-cli
+
+
+
+# DEV exp
+.prettirrc
+.eslintrc.js
